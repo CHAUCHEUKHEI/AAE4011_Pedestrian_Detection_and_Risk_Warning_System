@@ -385,5 +385,3 @@ The system currently runs at ~7.5–8.6 fps end-to-end on GPU. For autonomous ve
 <p align="center">
   Submitted for AAE4011 Group Project &nbsp;|&nbsp; PolyU AAE &nbsp;|&nbsp; April 2026
 </p>
-
-Occlusion is detected by computing the fraction of a vulnerable object's bounding box that is covered by a large vehicle's bounding box:
