@@ -122,18 +122,19 @@ Velocity is smoothed over the last 5 frames and projected forward up to 25 frame
 ---
 
 ## 📁 Repository Structure
-AAE4011_Pedestrian_Detection_Risk_Warning/
-├── config_4011.py # Central configuration (thresholds, feature flags)
-├── detector_4011.py # YOLOv8m detection wrapper (abstracts Ultralytics API)
-├── tracker_4011.py # ByteTrack + 30-frame motion trail manager
-├── depth_estimator_4011.py # Depth Anything V2 Metric Outdoor wrapper
-├── occlusion_4011.py # Overlap-fraction occlusion detection
-├── risk_engine_4011.py # Risk scoring, trajectory prediction, temporal smoothing
-├── warning_4011.py # Stateful audio alerts (beepy / pyttsx3)
-├── display_4011.py # OpenCV visualisation and overlay rendering
-├── main_4011.py # Main orchestration script (pipeline entry point)
-├── requirements.txt # Python dependencies
-└── README.md # This file
+
+- **AAE4011_Pedestrian_Detection_Risk_Warning/**
+  - `config_4011.py` - Central configuration (thresholds, feature flags)
+  - `detector_4011.py` - YOLOv8m detection wrapper (abstracts Ultralytics API)
+  - `tracker_4011.py` - ByteTrack + 30-frame motion trail manager
+  - `depth_estimator_4011.py` - Depth Anything V2 Metric Outdoor wrapper
+  - `occlusion_4011.py` - Overlap-fraction occlusion detection
+  - `risk_engine_4011.py` - Risk scoring, trajectory prediction, temporal smoothing
+  - `warning_4011.py` - Stateful audio alerts (beepy / pyttsx3)
+  - `display_4011.py` - OpenCV visualisation and overlay rendering
+  - `main_4011.py` - Main orchestration script (pipeline entry point)
+  - `requirements.txt` - Python dependencies
+  - `README.md` - This file
 
 **Key files described:**
 
