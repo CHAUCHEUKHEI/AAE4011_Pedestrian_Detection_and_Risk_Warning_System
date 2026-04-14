@@ -98,8 +98,7 @@ A relative depth model might indicate that object A is "closer than" object B, b
 ---
 
 ### 🫥 Occlusion Detection: Overlap Fraction (not IoU)
-Occlusion is detected by computing the fraction of a vulnerable object's bounding box that is covered by a large vehicle's bounding box:
-Standard **IoU is deliberately avoided** here. IoU normalises against the *union* of both boxes, causing large vehicle boxes to dominate the denominator and keeping IoU artificially low even when a pedestrian is substantially hidden. The overlap fraction normalises against only the vulnerable object's area, directly quantifying *what fraction of the pedestrian is concealed*. If overlap ≥ 0.20, the pedestrian is flagged as occluded and forced to AMBER risk regardless of measured depth.
+Occlusion is detected by computing the fraction of a vulnerable object's bounding box that is covered by a large vehicle's bounding box. Standard **IoU is deliberately avoided** here. IoU normalises against the *union* of both boxes, causing large vehicle boxes to dominate the denominator and keeping IoU artificially low even when a pedestrian is substantially hidden. The overlap fraction normalises against only the vulnerable object's area, directly quantifying *what fraction of the pedestrian is concealed*. If overlap ≥ 0.20, the pedestrian is flagged as occluded and forced to AMBER risk regardless of measured depth.
 
 ---
 
