@@ -270,12 +270,12 @@ drive.mount('/content/drive')
 
 | GREEN — Clear road, distant vehicles | AMBER — Pedestrian in lane |
 |---|---|
-| ![GREEN scene](scenario_green.png) | ![AMBER scene](scenario_amber.png) |
+| <img src="scenario_green.png" width="400"> | <img src="scenario_amber.png" width="400"> |
 | *All detections ≥ 10 m, no inward trajectory* | *Pedestrian detected in corridor at 5–8 m* |
 
 | AMBER (Occlusion) — Hidden pedestrian | RED — Close-range object in lane |
 |---|---|
-| ![Occlusion scene](scenario_occluded.png) | ![RED scene](scenario_red.png) |
+| <img src="scenario_occlusion.png" width="400"> | <img src="scenario_red.png" width="400"> |
 | *Dashed box + `? OCCLUDED`, forced AMBER* | *Object < 4 m in lane, double-beep warning* |
 
 ---
