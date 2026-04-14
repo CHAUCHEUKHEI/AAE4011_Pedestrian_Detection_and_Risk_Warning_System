@@ -298,13 +298,13 @@ The video demonstrates all key system components:
 
 ## 💬 Reflection & Critical Analysis
 
-### (a) What Did You Learn?
+### (a) What Did We Learn?
 
 **Skill 1 — Building a modular AI inference pipeline:**
-Prior to this project, I had experience with standalone detection scripts but not with integrating multiple sequential AI models into a single real-time pipeline. Building the system module-by-module — with each stage independently toggleable via feature flags in `config_4011.py` — taught me how to manage inter-module data contracts and how to isolate and debug individual stages without disrupting the full pipeline. A key lesson was model loading strategy: all models must be loaded in the class `__init__` method and reused across frames, never reloaded per-frame. Reloading weights even once per second adds hundreds of milliseconds of latency and renders the system unusable.
+Prior to this project, We had experience with standalone detection scripts but not with integrating multiple sequential AI models into a single real-time pipeline. Building the system module-by-module — with each stage independently toggleable via feature flags in `config_4011.py` — taught us how to manage inter-module data contracts and how to isolate and debug individual stages without disrupting the full pipeline. A key lesson was model loading strategy: all models must be loaded in the class `__init__` method and reused across frames, never reloaded per-frame. Reloading weights even once per second adds hundreds of milliseconds of latency and renders the system unusable.
 
 **Skill 2 — Monocular metric depth estimation in real-world metres:**
-Working with Depth Anything V2 taught me the practical distinction between relative and metric depth — a distinction that is not always emphasised in introductory computer vision courses. I learned how to sample depth robustly from a bounding box using the 20th-percentile lower-centre patch technique, which substantially outperforms naive centroid or mean sampling by avoiding background pixels and ground-plane artefacts within the bounding box boundary.
+Working with Depth Anything V2 taught us the practical distinction between relative and metric depth — a distinction that is not always emphasised in introductory computer vision courses. We learned how to sample depth robustly from a bounding box using the 20th-percentile lower-centre patch technique, which substantially outperforms naive centroid or mean sampling by avoiding background pixels and ground-plane artefacts within the bounding box boundary.
 
 **Skill 3 — Asymmetric temporal smoothing for flicker prevention:**
 The most counterintuitive insight from this project was that naive temporal averaging — treating upgrades and downgrades symmetrically — makes a safety system *less* safe. An object measured at exactly 4.0 m that fluctuates between RED and AMBER on consecutive frames due to depth noise produces rapidly alternating warnings that operators learn to ignore. Asymmetric smoothing — immediate upgrades, consensus-gated downgrades — encodes a correct safety philosophy and was the most satisfying engineering design decision of the project.
@@ -314,7 +314,7 @@ Understanding why IoU fails as an occlusion metric for large vehicle / small ped
 
 ---
 
-### (b) How Did You Use AI Tools?
+### (b) How Did We Use AI Tools?
 
 **Primary tools:** Claude (code generation and debugging) and Perplexity AI (research and technical concepts).
 
