@@ -284,7 +284,7 @@ drive.mount('/content/drive')
 [![Demo Video](https://img.shields.io/badge/▶%20Watch%20on%20YouTube-Unlisted-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtu.be/mdRpK6RcI6A)
 
 📺 **Link:** https://youtu.be/mdRpK6RcI6A  
-⏱️ **Duration:** [TODO: Add duration]
+⏱️ **Duration:** 04:03 min
 
 The video demonstrates all key system components:
 
